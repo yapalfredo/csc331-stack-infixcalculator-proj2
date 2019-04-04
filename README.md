@@ -9,4 +9,4 @@ This is just a silly small project for Stack topic in data structures
 
 
 also, there's a linking issue between header file and cpp everytime I implement a template in a class.
-The only patch the works for my assembler is when I renamed the CPP to TPP and have it included at the bottom of the header file.
+The only patch that works for my assembler is when I renamed the CPP to TPP and have it included at the bottom of the header file.
