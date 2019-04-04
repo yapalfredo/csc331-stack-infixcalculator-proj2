@@ -1,4 +1,4 @@
-# csc331-stack-infixcalculator-proj2
+# CSC331H-ProjectPart2
 
 ProjectPart2
 
