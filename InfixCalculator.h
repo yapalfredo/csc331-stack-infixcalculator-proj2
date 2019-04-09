@@ -19,6 +19,8 @@ class InfixCalculator
     T doOperation(T, T, char);
     int getPrecedence(char);
     void getResult(string);
+    string stringSeparator(string);
+    string charToString(char);
 };
 
 #include "InfixCalculator.tpp"

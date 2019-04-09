@@ -1,4 +1,5 @@
 #include "InfixCalculator.h"
+#include "string"
 
 int main()
 {
@@ -6,19 +7,22 @@ int main()
   string expression;
   InfixCalculator<int> newInfCalc;
 
-  cout <<"----------------------------------------------------------------";
-  cout <<"\nWHEN ENTERING AN EXPRESSION" << endl;
-  cout <<"Please separate the operand and operator with a whitespace ' '"<< endl;
-  cout <<"For example:" << endl;
-  cout <<"20 + 3 * 7" << endl;
-  cout <<"88 * ( 41 - 51 )" << endl;
-  cout << "200 * ( 12 + 6 ) / 7" << endl;
+  cout <<"----------------------------------------------------------------" <<endl;
+
+  cout <<"P L E A S E   E N T E R   A N   E X P R E S S I O N"<< endl;
+
   cout <<"----------------------------------------------------------------\n\n";
   do
   {
     cout << "Enter expression: ";
     getline(cin, expression);
-    newInfCalc.getResult(expression);
+    try
+    {
+      newInfCalc.getResult(expression);
+    } catch (const exception& e)
+    {
+      cout << "0";
+    }
 
     cout <<"\n\n Do you want to try again? y/n ";
     cin >>ans;
